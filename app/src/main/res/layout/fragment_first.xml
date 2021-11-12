@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#47444d">
+
+    <Switch
+        android:id="@+id/backstack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/add_to_backstack"
+        android:textColor="#00BFA5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/please_select"
+        android:textColor="#f8ffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backstack" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select">
+
+        <RadioButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="30dp"
+            android:text="@string/add"
+            android:textColor="#f8ffff"
+            android:textSize="20sp"
+            android:checked="true"
+            tools:ignore="RtlSymmetry" />
+
+        <RadioButton
+            android:id="@+id/replace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/replace"
+            android:textColor="#f8ffff"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+        </RadioGroup>
+
+    <Button
+        android:id="@+id/createFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/create_fragment"
+        android:backgroundTint="#ff44ab"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
